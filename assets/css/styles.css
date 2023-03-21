@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'ChineseRocks';
+    src: url('../fonts/ChineseRocks.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BuiltTitlingSB';
+    src: url('../fonts/builttitlingsb.ttf');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSlabM';
+    src: url('../fonts/RobotoSlab-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+Colour scheme
+	Black #000000
+	Grey #ffffff
+	Red #ff0000
+	Dark Red #990000
+	Yellow #ffd000
+*/
+body {
+  background-color: #ffffff;
+}
+
+
+#header {
+		background-color: #000000;
+}
+
+.mini-post {
+
+		background: #000000;
+}
+		
+.post {
+		background: #000000;
+}
+
+h2, h3, h4, h5, h6 {
+		color:  #ff0000;
+		font-family: 'ChineseRocks';
+}
+
+h1 {
+  font-family: 'ChineseRocks';
+  color: white;
+}
+
+.post h2 {
+  color: #ff0000;
+}
+.post p {
+  color: white;
+}
+
+p{
+	color: #000000;
+	font-family: 'RobotoSlabM';
+}
+
+#header .links {
+	color: white;
+	font-family: 'BuiltTitlingSB';
+}
+
+.video {
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.video img {
+			display: block;
+		}
+
+		.video.left, .video.right {
+			max-width: 40%;
+		}
+
+			.video.left img, .video.right img {
+				width: 100%;
+			}
+
+		.video.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.video.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.video.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.video.fit img {
+				width: 100%;
+			}
+
+		.video.featured {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.video.featured {
+				width: 100%;
+				height: 15%;
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.video.featured {
+					margin: 0 0 1.5em 0;
+				}
+
+			}
+
+		.video.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.video.main {
+				width: 100%;
+			}
