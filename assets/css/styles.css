@@ -25,15 +25,36 @@ Colour scheme
 	Red #ff0000
 	Dark Red #990000
 	Yellow #ffd000
+	
+	#2ebaae is that turquoise they use
 */
 body {
   background-color: #ffffff;
+  background-image: url('../../images/GrittyBackground.jpg')
 }
 
+/*-----------------------Navigation Bar Styles -----------------------------*/
 
 #header {
 		background-color: #000000;
 }
+
+.links li{
+	color: #ff0000;
+}
+
+.links:hover li{
+	color: #ff0000;
+}
+.links:focus li{
+	color: purple;
+}
+
+
+
+.links > li  {
+	color: purple;
+		}
 
 .mini-post {
 
@@ -71,71 +92,53 @@ p{
 	font-family: 'BuiltTitlingSB';
 }
 
-.video {
-		border: 0;
-		display: inline-block;
-		position: relative;
+.FeaturedVideoDiv{
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%
+}
+
+.FeaturedVideoDiv iframe{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	Height: 100%;
+}
+
+.button{
+	font-family: 'BuiltTitlingSB';
+	color: red;
+	
+}
+
+a:hover {
+			color: #ffd000;
+
+}
+
+.mainLogoDiv{
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%
+}
+
+
+.mainLogoDiv img
+{
+	/* border: thick double #32a1ce; */
+	
+}
+
+
+	/*-----------------Red Dead Online Article Pages ---------------------------------*/
+	
+.articleList li{
+		Color: white;
+			
 	}
-
-		.video img {
-			display: block;
-		}
-
-		.video.left, .video.right {
-			max-width: 40%;
-		}
-
-			.video.left img, .video.right img {
-				width: 100%;
-			}
-
-		.video.left {
-			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
-		}
-
-		.video.right {
-			float: right;
-			padding: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
-
-		.video.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.video.fit img {
-				width: 100%;
-			}
-
-		.video.featured {
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			.video.featured {
-				width: 100%;
-				height: 15%;
-			}
-
-			@media screen and (max-width: 736px) {
-
-				.video.featured {
-					margin: 0 0 1.5em 0;
-				}
-
-			}
-
-		.video.main {
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			.video.main {
-				width: 100%;
-			}
+	
+	.articleList li b{
+		Color: white;
+			
+	}
